@@ -12,11 +12,13 @@ def nettoyer_titre(titre):
     titre = re.sub(r"\bHD\b", "", titre)           # supprime HD
     return titre.strip().lower()
 
-def find_film_link(search_name, site_url, seuil_bon_match=0.85, seuil_min=0.5):
+def find_film_link(search_name, seuil_bon_match=0.85, seuil_min=0.5):
     options = Options()
     options.add_argument('--headless')
     driver = webdriver.Chrome(options=options)
-
+    
+    site_url="https://koriom.com/cywz0waiqhzf4/home/koriom"
+    
     try:
         driver.get(site_url)
         time.sleep(2)
@@ -41,7 +43,7 @@ def find_film_link(search_name, site_url, seuil_bon_match=0.85, seuil_min=0.5):
 
         cleaned_search = nettoyer_titre(search_name)
 
-        print(candidates)
+        #print(candidates)
 
         matches = []
         for cleaned_title, href, original_title in candidates:
@@ -63,7 +65,8 @@ def find_film_link(search_name, site_url, seuil_bon_match=0.85, seuil_min=0.5):
                 return matches[0][2]
             else:
                 print("\n⚠️ Résultats trop proches, sélection manuelle recommandée.")
-                return None
+                print(matches)
+                return matches
         else:
             print("❌ Aucun résultat suffisamment proche trouvé.")
             return None
@@ -73,4 +76,4 @@ def find_film_link(search_name, site_url, seuil_bon_match=0.85, seuil_min=0.5):
 
 
 
-find_film_link("Captain America : First Avenger", "https://koriom.com/cywz0waiqhzf4/home/koriom")
+#find_film_link("Captain America : Civil War")
