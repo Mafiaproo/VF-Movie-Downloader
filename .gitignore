@@ -5,6 +5,8 @@ temp/*
 !out/.gitkeep 
 !temp/.gitkeep
 
+/test.py
+
 #----------------------------------------------
 
 # Gitignore Python Template
