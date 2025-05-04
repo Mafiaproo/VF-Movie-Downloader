@@ -1,0 +1,85 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "C:/Users/gamer/Desktop/ShareCloudy Video Downloader/main.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": false
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "icon_file",
+   "value": "C:/Users/gamer/Desktop/ShareCloudy Video Downloader/icon.ico"
+  },
+  {
+   "optionDest": "name",
+   "value": "Legal Movie Downloader"
+  },
+  {
+   "optionDest": "contents_directory",
+   "value": "Legal Movie Downloader"
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "hide_console",
+   "value": "minimize-late"
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/gamer/Desktop/ShareCloudy Video Downloader/out;out/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/gamer/Desktop/ShareCloudy Video Downloader/temp;temp/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/gamer/Desktop/ShareCloudy Video Downloader/icon.ico;."
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": ""
+ }
+}

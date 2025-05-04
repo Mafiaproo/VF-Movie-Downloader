@@ -62,7 +62,7 @@ def find_film_link(search_name, seuil_bon_match=0.85, seuil_min=0.5):
             # Prendre le premier si assez pertinent
             if matches[0][0] >= seuil_bon_match:
                 print(f"\n✅ Meilleur match automatique : {matches[0][1]} ({matches[0][0]:.2f})")
-                return matches[0][2]
+                return matches[0]
             else:
                 print("\n⚠️ Résultats trop proches, sélection manuelle recommandée.")
                 print(matches)
@@ -76,4 +76,4 @@ def find_film_link(search_name, seuil_bon_match=0.85, seuil_min=0.5):
 
 
 
-#find_film_link("Captain America : Civil War")
+#print(find_film_link("Captain America : first avenger"))
